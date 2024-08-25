@@ -1,0 +1,34 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sat Aug 24 10:20:26 2024
+[*]
+[dumpfile] "C:\Users\tylpk\Desktop\wave.vcd"
+[dumpfile_mtime] "Sat Aug 24 10:15:37 2024"
+[dumpfile_size] 525
+[savefile] "C:\Users\tylpk\Desktop\fsm_tb.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -113 -113
+*-6.037296 80 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test_tb.
+[treeopen] test_tb.dut.
+[sst_width] 197
+[signals_width] 158
+[sst_expanded] 1
+[sst_vpaned_height] 221
+@28
+test_tb.clk[0]
+test_tb.reset[0]
+test_tb.data[0]
+test_tb.shift_ena[0]
+test_tb.counting[0]
+test_tb.done_counting[0]
+test_tb.done[0]
+test_tb.ack[0]
+test_tb.dut.pattern_obj.found[0]
+@201
+-
+@28
+test_tb.dut.pattern_obj.counter[2:0]
+[pattern_trace] 1
+[pattern_trace] 0
