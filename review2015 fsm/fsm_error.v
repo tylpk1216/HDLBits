@@ -46,7 +46,7 @@ module counter (
                     next_state = END;
             end
             END: begin
-                next_state = curr_state;    
+                next_state = IDLE;    
             end
             default: begin
                 next_state = curr_state;
@@ -116,7 +116,7 @@ module stop_single (
                     next_state = END;
             end
             END: begin
-                next_state = curr_state;    
+                next_state = IDLE;    
             end
             default: begin
                 next_state = curr_state;    
@@ -165,7 +165,7 @@ module top_module (
     wire found;
     pattern pattern_obj (
         .clk(clk),
-        .reset(reset || single_done2),
+        .reset(reset || shift_ena || counting || done),
         .data(data),
         .found(found)
     );
