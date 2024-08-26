@@ -29,39 +29,57 @@ module test_tb;
         reset = 1;
         data = 0;
         done_counting = 1;
-        ack = 0;
+        ack = 1;
         
+		#20;
+		reset <= 0;
+		data <= 1;
+
+		#10;
+		data <= 0;
+		#20;
+		data <= 1;
+		#20;
+		data <= 0;
+		#10;
+		data <= 1;
+
         #10;
-        reset <= 0;
+        data <= 1;
+        #10;
         data <= 1;
         #10;
         data <= 0;
-        #20;
-        data <= 1;
-        #20;
-        data <= 0;
         #10;
         data <= 1;
+
         #10;
-        data <= 0;
-        
-        // fake signal
-        #40;
-        done_counting <= 0;
-        ack <= 1;
-        
-        #40;
-        ack <= 0;
-        done_counting <= 1;
-        #10;
-        done_counting <= 0;
+		done_counting <= 0;
+		ack <= 0;
+
+		#40;
+		done_counting <= 1;
+		#10;
+		done_counting <= 0;
+		
         #30;
-        ack <= 1;
+		ack <= 1;
+		#10;
+		ack <= 0;
+		data <= 1;
+
         #10;
-        ack <= 0;
-        
+	    data <= 1;
+	    #10;
+	    data <= 0;
+	    #10;
+	    data <= 1;
+
         #10;
-        $finish;
+        // at 260 ns, another 1101 is coming, shift_ena must be 1.
+
+		#10;
+		$finish;
     end
     
     top_module dut (
@@ -73,6 +91,5 @@ module test_tb;
         .done_counting(done_counting),
         .done(done),
         .ack(ack)
-    );
-    
-endmodule    
+    );    
+endmodule
