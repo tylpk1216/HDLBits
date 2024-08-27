@@ -1,8 +1,7 @@
 `timescale 1ns/1ns
 
-`include "fsm_ok_one_module.v"
-//`include "fsm_error.v"
-//`include "fsm_ok_two_submodule.v"
+//`include "fsm_ok_one_module.v"
+`include "fsm_error.v"
 
 module test_tb;
     initial begin

@@ -1,0 +1,62 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Tue Aug 27 13:10:50 2024
+[*]
+[dumpfile] "C:\Users\tylpk\Desktop\HDLbits_fsm\HDLBits\review2015_fsm\wave.vcd"
+[dumpfile_mtime] "Tue Aug 27 13:03:26 2024"
+[dumpfile_size] 726
+[savefile] "C:\Users\tylpk\Desktop\HDLbits_fsm\HDLBits\review2015_fsm\fsm_tb.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -35 -35
+*-5.676157 100 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test_tb.
+[treeopen] test_tb.dut.
+[sst_width] 197
+[signals_width] 227
+[sst_expanded] 1
+[sst_vpaned_height] 221
+@200
+-testbench
+@28
+test_tb.clk[0]
+test_tb.reset[0]
+test_tb.data[0]
+test_tb.shift_ena[0]
+test_tb.counting[0]
+test_tb.done_counting[0]
+test_tb.done[0]
+test_tb.ack[0]
+@200
+-
+-module pattern
+@28
+test_tb.dut.pattern_obj.counter[2:0]
+test_tb.dut.pattern_obj.found[0]
+@200
+-
+-module counter
+@28
+test_tb.dut.counter_obj.count[2:0]
+test_tb.dut.counter_obj.curr_state[1:0]
+test_tb.dut.counter_obj.next_state[1:0]
+test_tb.dut.counter_obj.done[0]
+@200
+-
+-module stop_single 1
+@28
+test_tb.dut.stop_single_obj1.curr_state[1:0]
+test_tb.dut.stop_single_obj1.next_state[1:0]
+test_tb.dut.stop_single_obj1.start[0]
+test_tb.dut.stop_single_obj1.stop[0]
+test_tb.dut.stop_single_obj1.done[0]
+@200
+-
+-module stop_single 2
+@28
+test_tb.dut.stop_single_obj2.curr_state[1:0]
+test_tb.dut.stop_single_obj2.next_state[1:0]
+test_tb.dut.stop_single_obj2.start[0]
+test_tb.dut.stop_single_obj2.stop[0]
+[pattern_trace] 1
+[pattern_trace] 0
